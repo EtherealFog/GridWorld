@@ -23,7 +23,6 @@ import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;
 
 import com.bugs.Jumper;
-import com.critters.CrabCritter;
 
 /**
  * This class runs a world that contains crab critters. <br />
