@@ -16,13 +16,14 @@
  * @author Cay Horstmann
  */
 package com.runners;
-import com.critters.CrabCritter;
-
 import info.gridworld.actor.ActorWorld;
 import info.gridworld.actor.Bug;
 import info.gridworld.actor.Flower;
 import info.gridworld.actor.Rock;
 import info.gridworld.grid.Location;
+
+import com.bugs.Jumper;
+import com.critters.CrabCritter;
 
 /**
  * This class runs a world that contains crab critters. <br />
@@ -46,6 +47,7 @@ public class CrabRunner
         world.add(new Location(4, 5), new CrabCritter());
         world.add(new Location(6, 1), new CrabCritter());
         world.add(new Location(7, 4), new CrabCritter());
+        world.add(new Jumper());
         world.show();
     }
 }
