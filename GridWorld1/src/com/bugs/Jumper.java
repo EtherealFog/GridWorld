@@ -45,8 +45,11 @@ public class Jumper extends Actor {
         	next = loc.getAdjacentLocation(getDirection()).getAdjacentLocation(getDirection());
         else {
         	throw new IllegalArgumentException("param should be 1 or 0");
-        	
         }
+        if (gr.isValid(next))
+            moveTo(next);
+        else
+            removeSelfFromGrid();
 	}
 	
 	public void act() {
