@@ -23,7 +23,7 @@ public class SnakeGame {
 		head.setDirection(0); 
 		world.add(new Location(17, 9), head); 
 		// Uncomment once randomFlower() is implemented
-		//head.randomFlower();
+		head.randomFlower();
 		
 		// Read this code below but don't worry too much about it
 		// It makes the snake head face a direction based
