@@ -65,7 +65,7 @@ public class Jumper extends Actor {
 	}
 	
 	public void turn() {
-		turn(45);
+		turn(1);
 	}
 	
 }
