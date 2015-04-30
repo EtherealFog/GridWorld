@@ -33,8 +33,7 @@ public class Grub extends Critter {
 	}
 	
 	public Location selectMoveLocation(ArrayList<Location> locs) {
-		Location loc = null;
-		loc = locs.get((int)(Math.random() * locs.size()));
+		Location loc = locs.get((int)(Math.random() * locs.size()));
 		if(getGrid().get(loc) instanceof Flower || getGrid().get(loc) == null) {
 			return loc;
 		} else {
